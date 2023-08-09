@@ -1,0 +1,12 @@
+{
+  "errorCode": "200",
+  "userInfo": {
+    "userId": "007",
+    "userName": "James Bond",
+    "country": "United Kingdom",
+    "occupationInfo": {
+      "name": "Secret Agent",
+      "place": "MI6"
+    }
+  }
+}

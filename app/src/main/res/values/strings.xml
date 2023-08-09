@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Just a login</string>
+    <string name="legend_login">Login</string>
+    <string name="legend_signup">Sing Up</string>
+    <string name="legend_user_hint">Username</string>
+    <string name="legend_pass_hint">Password</string>
+    <string name="legend_forgot_pass">Forgot your password?</string>
+    <string name="legend_oops">Oops!</string>
+    <string name="legend_confirm">Accept</string>
+    <string name="legend_salutation">Hi %1$s!\n\n It\'s time to be the best %2$s…</string>
+    <string name="legend_incomplete_fields">Please complete all fields.</string>
+    <string name="legend_generic_error">A wild GENERIC ERROR has appeared!</string>
+    <string name="legend_have_account">Haven\'t you got have an account? Sing Up</string>
+    <string name="title_activity_feed">Feed</string>
+</resources>
