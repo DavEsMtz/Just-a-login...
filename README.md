@@ -5,7 +5,7 @@ Is just a login...
 ## Description
 
 This project shows a Login screen with user and password entries.
-Is using a repository pattern with clean architecture, each layer has its own module.
+Is using repository pattern with clean architecture, each layer has its own module.
 
 #### Presentation layer
 
@@ -31,27 +31,30 @@ Domain layer contains use cases implementation and pure models.
 4. Repository returns data from either local or remote Data Source.
 5. Information Flows back to UI where is handled by ViewModel notifying to UI with an state.
 
-### Scenario
+## Scenario
 
 After entry user name and password login screen shows a success message and goes to a new screen
 with user name deployed.
 
+https://github.com/DavEsMtz/Just-a-login.../assets/136655012/6fdf7b78-ee6d-490e-8129-c9ed2383ca46
+
 ## How to run the app
 
 1. Clone this [repo](https://github.com/DavEsMtz/Just-a-login....git) import using Android Studio.
-2. Once you have opened the project sync project with Gradle, if you are facing problems I let this
-   image as reference.
-![](../invalidate and restart.jpg)
-3. On Build Variants select PoCMockServer to get a mocked login response, otherwise response will always failed, because there is no active server.
-4. Run and cheers!
+2. Once you have opened the project sync project with Gradle, if you are facing problems building modules just Invalidate Caches and Restart.
+ I put an image as reference at the end. 
+4. On Build Variants select PoCMockServer to get a mocked login response, otherwise response will always failed, because there is no active server.
+5. Run and cheers!
 
 ### At a glance:
 - Mix of views between xml and Compose is just to show both methods usage, same as Live Data and flows to handle view state and events on ViewModel.
-- Both entries should be filled to continue.
+- Both entries must be filled to continue.
 - Handles mock response using build types, make sure you are using the correct Build Variant I mentioned above.
 - Supports orientation changes
 - Room as a local Data Source is implemented and operative but is not called anywhere.
 - Has a proto implementation to handle errors.
 
-##### Known Issues
+##### Known Issues:
 - Background is upside down on preview but when you run the app is shown normally.
+
+ ![invalidate and restart](https://github.com/DavEsMtz/Just-a-login.../assets/136655012/71da1132-f02a-4ead-8d7b-c11426adec5f)
