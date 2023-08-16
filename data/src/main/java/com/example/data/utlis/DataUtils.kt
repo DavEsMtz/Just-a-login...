@@ -1,8 +1,5 @@
 package com.example.data.utlis
 
-import android.app.Activity
-import android.content.Context
-import android.content.ContextWrapper
 import android.content.Intent
 import android.os.Build.VERSION_CODES
 import android.os.Build.VERSION.SDK_INT
@@ -21,13 +18,6 @@ fun handleErrorCode(errorCode: String): LoginErrorType {
         else ->
             LoginErrorType.SomeCodeError(errorCode)
     }
-
-}
-
-fun Context.findActivity(): Activity? = when (this) {
-    is Activity -> this
-    is ContextWrapper -> baseContext.findActivity()
-    else -> null
 }
 
 inline fun <reified T : Parcelable> Intent.retrieveParcelable(key: String): T? = when {

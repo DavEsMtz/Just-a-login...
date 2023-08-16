@@ -1,6 +1,8 @@
 package com.example.justalogin.utils
 
 import android.app.Activity
+import android.content.Context
+import android.content.ContextWrapper
 import android.graphics.Typeface
 import android.text.Selection
 import android.text.Spannable
@@ -47,6 +49,12 @@ fun <T> Fragment.safeFlowCollection(
             flow.collect { action(it) }
         }
     }
+
+fun Context.findActivity(): Activity? = when (this) {
+    is Activity -> this
+    is ContextWrapper -> baseContext.findActivity()
+    else -> null
+}
 
 fun Activity.hideSoftKeyboard() {
     currentFocus?.let {

@@ -15,8 +15,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.justalogin.ui.login.ui.theme.JustALogin
 import com.example.data.models.parcelable.UserInfoParcel
-import com.example.data.utlis.findActivity
 import com.example.data.utlis.retrieveParcelable
+import com.example.justalogin.utils.findActivity
 
 class FeedActivity : ComponentActivity() {
     private var userInfoParcel: UserInfoParcel? = null
